@@ -17,7 +17,7 @@ def get_colors():
 def demo(ks=(1, 2, 3, 4), N=20, azimuths=(0, 20), elevations=(90, 30), colors=get_colors(), verbose=True, savefig=False,
          showfig=True, elements=True):
     """
-    
+
     :param ks:
     :param N:
     :param azimuths:
