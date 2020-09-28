@@ -17,16 +17,15 @@ def get_colors():
 def demo(ks=(1, 2, 3, 4), N=20, azimuths=(0, 20), elevations=(90, 30), colors=get_colors(), verbose=True, savefig=False,
          showfig=True, elements=True):
     """
-
-    :param ks:
-    :param N:
-    :param azimuths:
-    :param elevations:
-    :param colors:
-    :param verbose:
-    :param savefig:
-    :param showfig:
-    :param elements:
+    :param tuple ks        : Orders of the Enneper surface
+    :param int N           : Resolution of each plot
+    :param tuple azimuths  : Azimuths for each plot
+    :param tuple elevations: Elevations for each plot
+    :param tuple colors    : RGBA tuples for colors of the surface, planes, lines, and point
+    :param bool verbose    : Whether to output auxilliary information
+    :param bool savefig    : Whether to save the figure to a file
+    :param bool showfig    : Whether to show the figure
+    :param bool elements   : Whether to display elements
     :return:
     """
     c_surfs, c_plane, c_line, c_point = colors
